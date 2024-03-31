@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran Play</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('backgroundimg.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s ease; 
+    }
+
+    .dimmed-background {
+      background-color: rgba(0, 0, 0, 0.5); 
+      background-image: url('bg.jpg');
+    }
+
+    h1 {
+      text-align: center;
+      color: orangered;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+
+    button {
+      border-radius: 50px; 
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+      color: red;
+      padding: 12px 24px; 
+      font-size: 18px; 
+    }
+
+    button:hover {
+      background-color: #007bff; 
+      color: white; 
+      transform: scale(0.95); 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto mt-4">
+        <h1>Welcome to Quran Play</h1>
+        <div id="loadingMessage" class="text-center text-white mb-3">Loading audios... Please wait.</div>
+        <div>
+          <label for="selectSurah">Select a Surah:</label>
+          <select id="selectSurah"></select>
+        </div>
+        <div id="cardContainer"></div>
+        <button id="nextAyahBtn">Next Ayah</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="Untitled-1.js"></script>
+</body>
+</html>
